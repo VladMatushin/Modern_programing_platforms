@@ -38,7 +38,9 @@ namespace UnitTest
         [TestMethod]
         public void TestTimeCount()
         {
-            TestTracerThread.time.Should().BeInRange(400, 500);
+            TestTracerThread.time.Should().BeInRange(400, 450);
+            TestMethod1.GetTime().Should().BeInRange(400, 450);
+            TestMethod2.GetTime().Should().BeInRange(200, 250);
         }
 
         [TestMethod]
@@ -51,4 +53,3 @@ namespace UnitTest
         }
     }
 }
-

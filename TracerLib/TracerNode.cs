@@ -40,6 +40,7 @@ namespace Tracer
             else
             {
                 TChilds.Add(node);
+                node.stopwatch.Restart();
                 node.TParent = this;
             }
         }
