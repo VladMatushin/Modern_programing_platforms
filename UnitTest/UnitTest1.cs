@@ -19,8 +19,6 @@ namespace UnitTest
         [TestInitialize]
         public void Initialize()
         {
-            //TestMethod1.AddNode(TestMethod2);
-
             TestTracerThread.addNode(TestMethod1);
 
             Thread.Sleep(100);
