@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp
+namespace Tracer.Serialize
 {
-    internal class Program
+    public interface ITraceSerializer
     {
-        static void Main(string[] args)
-        {
-        }
+        string serialize(TraceResult traceResult);
     }
 }
