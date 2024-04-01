@@ -30,7 +30,7 @@ namespace Consol
             threads[0].Join();
             threads[1].Join();
 
-            func.Func3(4);
+            func.Func3(3);
             func.Func1();
             func.Func2();
             var traceResult = func.tracer.GetTraceResult();

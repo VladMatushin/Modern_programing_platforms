@@ -18,7 +18,6 @@ namespace ConsoleApp
             tracer.StartTrace();
 
             Thread.Sleep(150);
-            Func2();
 
             Console.WriteLine("Func1 stop");
             tracer.StopTrace();
@@ -30,6 +29,7 @@ namespace ConsoleApp
             tracer.StartTrace();
 
             Thread.Sleep(250);
+            Func1();
 
             Console.WriteLine("Func2 stop");
             tracer.StopTrace();
